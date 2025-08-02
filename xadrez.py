@@ -67,17 +67,17 @@ while True:
                 elif linhadestino == linhaorigem + 1 and tabuleiro[linhadestino][colunadestino] == ".":
                     pass
                 else:
-                    print("Invalid moviment!")
+                    print("Invalid movement!")
                     continue
             elif abs(colunaorigem - colunadestino) == 1 and linhaorigem == linhadestino + 1:
                 alvo = tabuleiro[linhadestino][colunadestino]
                 if alvo.islower():
                     pass
                 else:
-                    print("Stop trying kill yout friends.")
+                    print("Stop trying kill your friends.")
                     continue
         else:
-            print("Invalid moviment.")
+            print("Invalid movement.")
 
         tabuleiro[destino[0]][destino[1]] = peca
         tabuleiro[origem[0]][origem[1]] = "."
